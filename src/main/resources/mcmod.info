@@ -3,7 +3,7 @@
   "modid": "silverfishelimination",
   "name": "Silverfish Elimination",
   "description": "Eliminate silverfish of your world!",
-  "version": "1.0RC",
+  "version": "${version}",
   "mcversion": "1.7.10",
   "url": "",
   "updateUrl": "",
