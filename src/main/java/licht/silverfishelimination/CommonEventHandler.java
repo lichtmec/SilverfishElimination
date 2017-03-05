@@ -3,6 +3,7 @@ package licht.silverfishelimination;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
+import net.minecraftforge.event.entity.PlaySoundAtEntityEvent;
 
 public final class CommonEventHandler
 {
@@ -23,6 +24,15 @@ public final class CommonEventHandler
 
 	@SubscribeEvent
 	public void onEntityJoinWorld (EntityJoinWorldEvent event)
+	{
+		if (SilverfishElimination.isSilverfish(event.entity))
+		{
+			event.setCanceled(true);
+		}
+	}
+
+	@SubscribeEvent
+	public void onPlaySound (PlaySoundAtEntityEvent event)
 	{
 		if (SilverfishElimination.isSilverfish(event.entity))
 		{
