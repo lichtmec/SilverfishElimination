@@ -5,6 +5,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.monster.EntitySilverfish;
 
 @Mod(modid="silverfishelimination", name="SilverfishElimination")
 public class SilverfishElimination
@@ -29,5 +31,15 @@ public class SilverfishElimination
 	@Mod.EventHandler
 	public void postInit (FMLPostInitializationEvent event)
 	{
+	}
+
+	public static boolean isSilverfish (Entity entity)
+	{
+		if (entity instanceof EntitySilverfish)
+		{
+			return true;
+		}
+
+		return false;
 	}
 }
