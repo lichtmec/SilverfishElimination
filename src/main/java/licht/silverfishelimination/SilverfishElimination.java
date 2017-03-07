@@ -26,6 +26,7 @@ public class SilverfishElimination
 	@Mod.EventHandler
 	public void init (FMLInitializationEvent event)
 	{
+		SilverfishBlockPairs.load();
 	}
 
 	@Mod.EventHandler
