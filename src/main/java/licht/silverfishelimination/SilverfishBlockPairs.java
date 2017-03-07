@@ -18,7 +18,12 @@ public final class SilverfishBlockPairs
 
 	public static void load ()
 	{
+		addSilverfishBlock(Blocks.monster_egg, 0, Blocks.stone, 0);
 		addSilverfishBlock(Blocks.monster_egg, 1, Blocks.cobblestone, 0);
+		addSilverfishBlock(Blocks.monster_egg, 2, Blocks.stonebrick, 0);
+		addSilverfishBlock(Blocks.monster_egg, 3, Blocks.stonebrick, 1);
+		addSilverfishBlock(Blocks.monster_egg, 4, Blocks.stonebrick, 2);
+		addSilverfishBlock(Blocks.monster_egg, 5, Blocks.stonebrick, 3);
 	}
 
 	public static void addSilverfishBlock (Block silverfishBlock, Block normalBlock, int normalBlockMetadata)
