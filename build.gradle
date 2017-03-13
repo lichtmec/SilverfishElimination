@@ -45,6 +45,13 @@ dependencies {
 
 }
 
+jar {
+    manifest {
+        attributes 'FMLCorePlugin' : 'licht.silverfishelimination.asm.SELoadingPlugin'
+        attributes 'FMLCorePluginContainsFMLMod' : '1'
+    }
+}
+
 processResources
 {
     // this will ensure that this task is redone when the versions change.

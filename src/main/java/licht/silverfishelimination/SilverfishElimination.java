@@ -21,6 +21,8 @@ public class SilverfishElimination
 	public void preInit (FMLPreInitializationEvent event)
 	{
 		proxy.registerEventHandler();
+
+		BlockPropertyChanger.run();
 	}
 
 	@Mod.EventHandler

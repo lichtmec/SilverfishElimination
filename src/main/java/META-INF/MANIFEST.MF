@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+FMLCorePlugin: licht.silverfishelimination.asm.SELoadingPlugin
+FMLCorePluginContainsFMLMod: 1
