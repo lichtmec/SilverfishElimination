@@ -5,7 +5,6 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.OreDictionary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -124,7 +123,7 @@ public final class SilverfishBlockPairs
 		{
 			boolean result = false;
 
-			if (block == this.silverfishBlock)
+			if (block == this.getSilverfishBlock())
 			{
 				if (this.getSilverfishBlockMetadata() == WILDCARD_VALUE)
 				{

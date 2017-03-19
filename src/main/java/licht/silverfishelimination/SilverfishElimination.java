@@ -38,11 +38,6 @@ public class SilverfishElimination
 
 	public static boolean isSilverfish (Entity entity)
 	{
-		if (entity instanceof EntitySilverfish)
-		{
-			return true;
-		}
-
-		return false;
+		return (entity instanceof EntitySilverfish);
 	}
 }
