@@ -7,13 +7,9 @@ import org.objectweb.asm.Opcodes;
 
 public class SEClassVisitor extends ClassVisitor
 {
-	private String targetClassPath;
-
-	public SEClassVisitor (ClassVisitor classVisitor, String targetClassPath)
+	public SEClassVisitor (ClassVisitor classVisitor)
 	{
 		super(Opcodes.ASM4, classVisitor);
-
-		this.targetClassPath = targetClassPath;
 	}
 
 	@Override
@@ -31,7 +27,7 @@ public class SEClassVisitor extends ClassVisitor
 	{
 		boolean result = false;
 
-		if (ASMUtil.mapMethodName(targetClassPath, methodName, desc).equals("<init>"))
+		if (ASMUtil.mapMethodName(SEClassTransformer.TARGET_CLASS_PATH, methodName, desc).equals("<init>"))
 		{
 			result = true;
 		}

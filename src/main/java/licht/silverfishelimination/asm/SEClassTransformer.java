@@ -18,7 +18,7 @@ public class SEClassTransformer implements IClassTransformer
 		{
 			ClassReader classReader = new ClassReader(basicClass);
 			ClassWriter classWriter = new ClassWriter(1);
-			ClassVisitor classVisitor = new SEClassVisitor(classWriter, TARGET_CLASS_PATH);
+			ClassVisitor classVisitor = new SEClassVisitor(classWriter);
 
 			classReader.accept(classVisitor, 0);
 
