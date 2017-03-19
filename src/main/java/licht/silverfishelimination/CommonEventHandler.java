@@ -51,15 +51,15 @@ public final class CommonEventHandler
 		{
 			if (!event.world.isRemote)
 			{
-				ItemStack normalBlockStack = SilverfishBlockPairs.getNormalBlockFromSilverfishBlock(event.block, event.blockMetadata);
+				ItemStack harvestBlockStack = SilverfishBlockPairs.getHarvestBlockFromSilverfishBlock(event.getPlayer(), event.block, event.blockMetadata);
 
-				if (normalBlockStack != null)
+				if (harvestBlockStack != null)
 				{
 					float f = 0.7F;
 					double xDiff = (double)(event.world.rand.nextFloat() * f) * (double)(1F - f) * 0.5D;
 					double yDiff = (double)(event.world.rand.nextFloat() * f) * (double)(1F - f) * 0.5D;
 					double zDiff = (double)(event.world.rand.nextFloat() * f) * (double)(1F - f) * 0.5D;
-					EntityItem entityItem = new EntityItem(event.world, event.x + xDiff, event.y + yDiff, event.z + zDiff, normalBlockStack);
+					EntityItem entityItem = new EntityItem(event.world, event.x + xDiff, event.y + yDiff, event.z + zDiff, harvestBlockStack);
 					entityItem.delayBeforeCanPickup = 10;
 					event.world.spawnEntityInWorld(entityItem);
 				}
