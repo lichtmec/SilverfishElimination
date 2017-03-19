@@ -7,18 +7,18 @@ import net.minecraft.launchwrapper.IClassTransformer;
 
 public class SEClassTransformer implements IClassTransformer
 {
-	public static final String TARGET_CLASS_PATH = "net.minecraft.block.BlockSilverfish";
+	public static final String TARGET_CLASS_PATH_BLOCKTRANSFORM = "net.minecraft.block.BlockSilverfish";
 
 	@Override
 	public byte[] transform (String name, String transformedName, byte[] basicClass)
 	{
 		byte[] bytes = basicClass;
 
-		if (transformedName.equals(TARGET_CLASS_PATH))
+		if (transformedName.equals(TARGET_CLASS_PATH_BLOCKTRANSFORM))
 		{
 			ClassReader classReader = new ClassReader(basicClass);
 			ClassWriter classWriter = new ClassWriter(1);
-			ClassVisitor classVisitor = new SEClassVisitor(classWriter);
+			ClassVisitor classVisitor = new SEClassVisitor_BlockTransform(classWriter);
 
 			classReader.accept(classVisitor, 0);
 

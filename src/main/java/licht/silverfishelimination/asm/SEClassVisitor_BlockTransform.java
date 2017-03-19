@@ -4,9 +4,9 @@ import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
-public class SEClassVisitor extends ClassVisitor
+public class SEClassVisitor_BlockTransform extends ClassVisitor
 {
-	public SEClassVisitor (ClassVisitor classVisitor)
+	public SEClassVisitor_BlockTransform (ClassVisitor classVisitor)
 	{
 		super(Opcodes.ASM4, classVisitor);
 	}
@@ -26,7 +26,7 @@ public class SEClassVisitor extends ClassVisitor
 	{
 		boolean result = false;
 
-		if (ASMUtil.mapMethodName(SEClassTransformer.TARGET_CLASS_PATH, methodName, desc).equals("<init>"))
+		if (ASMUtil.mapMethodName(SEClassTransformer.TARGET_CLASS_PATH_BLOCKTRANSFORM, methodName, desc).equals("<init>"))
 		{
 			result = true;
 		}
