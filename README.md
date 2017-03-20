@@ -8,6 +8,6 @@ Minecraft 1.7.10
 Forge 10.13.2.1291+
 
 ## Download
-本リポジトリのreleasesから希望のversionをダウンロードできます。  
-バージョンを選択し、"SilverfishElimination-*-*.jar"というファイルを保存してください。  
+本リポジトリのreleasesから希望のversionをダウンロードできます。  
+リリースリストの中から自身の環境に合ったリリースの"SilverfishElimination-*.jar"ファイルを保存してください。  
 ( * の部分はModVersionとMinecraftVersionになります)
