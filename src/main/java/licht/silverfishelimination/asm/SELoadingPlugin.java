@@ -18,7 +18,8 @@ public class SELoadingPlugin implements IFMLLoadingPlugin
 	@Override
 	public String getModContainerClass ()
 	{
-		return "licht.silverfishelimination.asm.SECoreContainer";
+//		return "licht.silverfishelimination.asm.SECoreContainer";
+		return null;
 	}
 
 	@Override
