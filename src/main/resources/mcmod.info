@@ -5,7 +5,7 @@
   "description": "Eliminate silverfish of your world!",
   "version": "${version}",
   "mcversion": "1.7.10",
-  "url": "",
+  "url": "https://github.com/lichtmec/SilverfishElimination",
   "updateUrl": "",
   "authorList": ["licht"],
   "credits": "",
