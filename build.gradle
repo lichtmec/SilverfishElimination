@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.0pre"
+version = "1.0-1.7.10"
 group= "licht.se" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "silverfishelimination"
+archivesBaseName = "SilverfishElimination"
 
 sourceCompatibility = '1.7'
 targetCompatibility = '1.7'

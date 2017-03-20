@@ -8,7 +8,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.monster.EntitySilverfish;
 
-@Mod(modid="silverfishelimination", name="SilverfishElimination", version="1.0pre")
+@Mod(modid="silverfishelimination", name="SilverfishElimination", version="1.0")
 public class SilverfishElimination
 {
 	@Mod.Instance("silverfishelimination")
